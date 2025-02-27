@@ -31,11 +31,11 @@ function addNoteAndTitle() {
   let titleInput = titleInputRef.value;
   let noteInput = noteInputRef.value;
   if (titleInput === "" || noteInput === "") {
-    errorIn.innerHTML = `Beide Felder ausgefüllt!`;
+    errorIn.innerHTML = `Beide Felder ausfüllen!`;
     setTimeout(() => {
       errorIn.innerHTML = "";
     }, 3000);
-    return; //wird beendet wenn feld leer ist
+    return;
   }
   allNotes.notesTitles.push(titleInput);
   allNotes.notes.push(noteInput);
@@ -92,7 +92,6 @@ function getFromLocalStorage() {
   }
 }
 
-
 function renderTrashNotes() {
   let trashContentRef = document.getElementById("trashContent");
   trashContentRef.innerHTML = "";
@@ -107,7 +106,6 @@ function renderTrashNotes() {
   }
 }
 
-
 function renderSaveNotes() {
   let saveContentRef = document.getElementById("saveContent");
   saveContentRef.innerHTML = "";
@@ -120,7 +118,6 @@ function renderSaveNotes() {
   }
 }
 
-
 function moveNote(indexNote, startKey, destinationKey) {
   let note = allNotes[startKey].splice(indexNote, 1);
   allNotes[destinationKey].push(note[0]);
@@ -132,13 +129,11 @@ function moveNote(indexNote, startKey, destinationKey) {
   renderAllNotes();
 }
 
-
 function renderAllNotes() {
   renderNotes();
   renderSaveNotes();
   renderTrashNotes();
 }
-
 
 function deleteNote(indexTrashNote) {
   allNotes.trashNotes.splice(indexTrashNote, 1);
@@ -147,7 +142,6 @@ function deleteNote(indexTrashNote) {
   saveToLocalStorage();
   renderAllNotes();
 }
-
 
 function deleteAll() {
   let deletAllBtn = document.getElementById("deleteAll");

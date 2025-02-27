@@ -10,7 +10,7 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="styles/assets.css">
+    <link rel="stylesheet" href="styles/assets.css" />
     <script src="./script/templates.js"></script>
     <script src="./script.js"></script>
   </head>
@@ -29,26 +29,23 @@
         <h1>Notes</h1>
 
         <div class="input_main">
-            <h2>Title:</h2>
-            <input id="titleInput" type="text" placeholder="Title" required>
-            <h2>to do:</h2>
-            <input id="noteInput" type="text" placeholder="to do" required>    
+          <h2>Title:</h2>
+          <input id="titleInput" type="text" placeholder="Title" required />
+          <h2>to do:</h2>
+          <input id="noteInput" type="text" placeholder="to do" required />
           <button class="save_btn" onclick="addNoteAndTitle()">Add Note</button>
           <div id="errorInput"></div>
         </div>
 
         <section id="content"></section>
 
-        <h2><img src="./assets/icon/ordner.png" alt="Archiv">Archive</h2>
+        <h2><img src="./assets/icon/ordner.png" alt="Archiv" />Archive</h2>
         <div id="saveContent"></div>
-        
-        <h2><img src="./assets/icon/trash.png" alt="trash">Trash</h2>
-        <div id="trashContent"> </div>
+
+        <h2><img src="./assets/icon/trash.png" alt="trash" />Trash</h2>
+        <div id="trashContent"></div>
         <div id="deleteAll"></div>
-   
       </section>
     </main>
-
-
   </body>
 </html>

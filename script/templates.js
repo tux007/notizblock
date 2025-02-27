@@ -9,9 +9,8 @@ function getNoteTemplate(indexNote) {
   </div>`;
 }
 
-
 function getSaveNoteTemplate(indexSaveNote) {
-    return ` 
+  return ` 
     <div class="note_content">
       <span class="title">${allNotes.saveNotesTitles[indexSaveNote]}</span> ▹ ${allNotes.saveNotes[indexSaveNote]} 
         <div class="btn">
@@ -19,8 +18,7 @@ function getSaveNoteTemplate(indexSaveNote) {
           <button onclick= "moveNote(${indexSaveNote},'saveNotes','trashNotes')"><img src="./assets/icon/trash_black.png" alt="trash"></button>
         </div>
     </div>`;
-  }
-  
+}
 
 function getTrashNoteTemplate(indexTrashNote) {
   return `

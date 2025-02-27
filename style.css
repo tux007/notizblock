@@ -44,8 +44,8 @@ main {
   margin: 0px 0 0px 0;
   display: flex;
   justify-content: center;
-  height: calc(120vh - 200px);  
-  overflow: hidden;
+  height: auto;
+  overflow: visible;
   min-height: 700px;
 }
 .start_menu {
@@ -57,8 +57,7 @@ main {
   align-items: center;
   padding-right: 50px;
   padding-left: 50px;
-  padding-top: 85px; 
-
+  padding-top: 85px;
 }
 h1 {
   color: #000000;
@@ -72,9 +71,8 @@ h1 {
   gap: 10px;
   width: 230px;
 }
-input{
+input {
   font-size: 16px;
- 
 }
 
 h2 {
@@ -93,6 +91,7 @@ h2 {
   width: 100%;
   margin: 15px;
   padding: 15px;
+  overflow: visible;
 }
 .note_content {
   height: 120px;
@@ -120,6 +119,7 @@ h2 {
   width: 100%;
   padding: 15px;
   margin-bottom: 10px;
+  overflow: visible;
 }
 
 /* trash content */
@@ -130,6 +130,7 @@ h2 {
   background-color: #fa91944d;
   width: 100%;
   padding: 15px;
+  overflow: visible;
 }
 
 /* footer */
@@ -170,17 +171,14 @@ footer {
   text-align: center;
 }
 
-
-@media (max-width:390px){
+@media (max-width: 390px) {
   .note_content {
     height: 115px;
     width: 115px;
-    
   }
 }
 
-
-@media (max-width:380px){
+@media (max-width: 380px) {
   .note_content {
     height: 100px;
     width: 100px;
@@ -192,13 +190,11 @@ footer {
     font-weight: 900;
     font-size: 20px;
     padding: 0 10px 0 10px;
-
+  }
 }
-}
-@media (max-width:350px){
+@media (max-width: 350px) {
   .note_content {
     height: 90px;
     width: 90px;
-    
   }
 }
